@@ -21,26 +21,26 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working Experience</small>
+              <small>4+ Years Programming Experience</small>
             </article>
 
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
               <small>200+ Worldwide</small>
-            </article>
+            </article> */}
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed Projects</small>
+              <small>20+ Completed Projects</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eum,
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eum,
             minima ipsum recusandae nostrum distinctio laboriosam quaerat fugit
             est sit quasi, cupiditate velit quis amet magnam cumque adipisci
-            accusamus voluptates!
+            accusamus voluptates! */}
           </p>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
