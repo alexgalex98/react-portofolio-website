@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portofolio-website/static/css/main.493c2851.css",
+    "main.js": "/react-portofolio-website/static/js/main.e89cf882.js",
+    "static/media/meBV.jpeg": "/react-portofolio-website/static/media/meBV.d27091330b1713524f02.jpeg",
+    "static/media/startup.png": "/react-portofolio-website/static/media/startup.bdab3f1360a03e4b4cd9.png",
+    "static/media/CV_Gabor_Alexandru-Gabriel.pdf": "/react-portofolio-website/static/media/CV_Gabor_Alexandru-Gabriel.d7fb5c73bd393502f11f.pdf",
+    "static/media/robofriends.png": "/react-portofolio-website/static/media/robofriends.32f50f5e5b44eb34a040.png",
+    "static/media/portfolio5.png": "/react-portofolio-website/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/me_.png": "/react-portofolio-website/static/media/me_.5a66e0d2ac0e103626ad.png",
+    "static/media/portfolio3.jpg": "/react-portofolio-website/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/portfolio4.jpg": "/react-portofolio-website/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "index.html": "/react-portofolio-website/index.html",
+    "main.493c2851.css.map": "/react-portofolio-website/static/css/main.493c2851.css.map",
+    "main.e89cf882.js.map": "/react-portofolio-website/static/js/main.e89cf882.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.493c2851.css",
+    "static/js/main.e89cf882.js"
+  ]
+}
