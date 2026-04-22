@@ -1,51 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { BiBook, BiMessageDots } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
-import { BiMessageDots } from "react-icons/bi";
-import { useState } from "react";
+import { GoProject } from "react-icons/go";
+import { MdOutlineReviews } from "react-icons/md";
 
 function Nav() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
+
+  const links = [
+    { href: "#home", icon: <AiOutlineHome />, label: "Home" },
+    { href: "#about", icon: <AiOutlineUser />, label: "About" },
+    { href: "#experience", icon: <BiBook />, label: "Experience" },
+    { href: "#services", icon: <RiServiceLine />, label: "Services" },
+    { href: "#portfolio", icon: <GoProject />, label: "Portfolio" },
+    { href: "#testimonials", icon: <MdOutlineReviews />, label: "Testimonials" },
+    { href: "#contact", icon: <BiMessageDots />, label: "Contact" },
+  ];
+
   return (
     <nav>
-      <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <BiBook />
-      </a>
-      {/* <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a> */}
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
-      >
-        <BiMessageDots />
-      </a>
+      {links.map(({ href, icon, label }) => (
+        <a
+          key={href}
+          href={href}
+          onClick={() => setActiveNav(href)}
+          className={activeNav === href ? "active" : ""}
+          aria-label={label}
+        >
+          {icon}
+        </a>
+      ))}
     </nav>
   );
 }
