@@ -32,10 +32,9 @@ src/
 
 ## Scripts
 
-- `npm start` – run local dev server
-- `npm run build` – create production build
-- `npm test` – run tests
-- `npm run deploy` – deploy `build/` to GitHub Pages
+- `npm start` - run local dev server
+- `npm run build` - create production build
+- `npm test` - run tests
 
 ## Contact Form Configuration (EmailJS)
 
@@ -51,15 +50,9 @@ Without these variables, the form displays a fallback message and prompts visito
 
 ## GitHub Pages Hosting
 
-This repo is already configured with a `homepage` field and deploy scripts in `package.json`.
+This repo is configured to deploy to GitHub Pages using GitHub Actions.
 
-1. Ensure your default branch is pushed to GitHub.
-2. Run:
-
-```bash
-npm install
-npm run deploy
-```
-
-3. In GitHub repo settings, check that Pages is serving from the `gh-pages` branch.
-
+1. Push changes to the `master` branch (or run the workflow manually from the Actions tab).
+2. Open the Actions tab and confirm `Deploy React app to GitHub Pages` completes successfully.
+3. In GitHub repo Settings -> Pages, ensure Source is set to `GitHub Actions`.
+4. Visit [https://alexgalex98.github.io/react-portofolio-website/](https://alexgalex98.github.io/react-portofolio-website/).
